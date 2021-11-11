@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:ital,wght@1,100&display=swap');
+
+header {
+
+    font-family: 'Henny Penny';
+
+}
+
+.log {
+    margin: auto;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-warning {
+    float: right;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+
+}
+
+
+
+.vidcont {
+    width: 50%;
+    height: auto;
+    margin: 5rem auto;
+    position: relative;
+
+
+}
+
+@media (max-width: 992px) {
+    .vidcont {
+        width: 100%;
+    }
+}
+
+
+h1 {
+    font-family: 'Henny Penny',
+        sans-serif;
+    font-size: 2.2rem !important;
+    font-weight: bolder;
+
+    text-align: center;
+    margin: 0.1rem 0;
+    padding: 0.5rem;
+
+
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #0D0D0D, #a783b1, #9453a6);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+}
+
+@keyframes animate {
+
+    0% {
+        background-position: -500%;
+    }
+
+    100% {
+        background-position: 500%;
+    }
+
+
+}
+
+
+.accordion_two_section {
+    background: #f2f2f2;
+    font-family: 'Pattaya',
+        sans-serif;
+    margin-bottom: 5rem;
+}
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.accordionTwo .panel-group {
+    margin: bottom 0;
+
+}
+
+.accordionTwo .panel {
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 10px solid transparent;
+    border-radius: 0;
+    margin: 2rem;
+}
+
+.accordionTwo .panel-default {
+    border: 0;
+}
+
+.accordionTwo .panel-default>.panel-heading {
+    background: #f2cc0f93;
+    border-radius: 0px;
+    border-color: #9453a6;
+}
+
+.accordion-wrap .panel-heading {
+    padding: 0px;
+    border-radius: 0px;
+}
+
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    color: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.accordionTwo .panel .panel-heading a.collapsed {
+    color: #9453a6;
+    background-color: #f2cc0f3a;
+    display: block;
+    padding: 1.2rem;
+}
+
+.accordionTwo .panel .panel-heading a {
+    display: block;
+    padding: 1.2rem;
+    color: #9453a6;
+}
+
+.accordion-wrap .panel .panel-heading a {
+    font-size: 1.2rem;
+}
+
+.accordionTwo .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: 0;
+    padding-top: 0;
+    padding: 1.2rem;
+    background: #f2cc0f93;
+    color: #9453a6;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.accordionTwo .panel .panel-heading a:after {
+    content: "\2212";
+    color: #f2cc0f;
+    background: #f2f2f2
+}
+
+.accordionTwo .panel .panel-heading a:after,
+.accordionTwo .panel .panel-heading a.collapsed:after {
+    font-family: 'Pattaya',
+        sans-serif;
+    font-size: 1.2rem;
+    float: right;
+    width: 1.2rem;
+    display: block;
+    height: 1.2rem;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #f2f2f2;
+}
+
+.accordionTwo .panel .panel-heading a.collapsed:after {
+    content: "\2b";
+    color: #9453a6;
+    background-color: #f2f2f2;
+}
+
+.accordionTwo .panel .panel-heading a:after {
+    content: "\2212";
+    color: #9453a6;
+    background: #f2f2f2;
+}
+
+a:link {
+    text-decoration: none
+}
+
+* {
+    transition: all 0.5s ease;
+}
+
+/* Contacts */
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto',
+        sans-serif;
+    margin-top: 0;
+    font-weight: bolder;
+    margin-bottom: 1.2rem;
+}
+
+form {
+    padding: 5px;
+    width: 50vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form div,
+form label,
+form input,
+form textarea {
+    width: 100%;
+}
+
+.field:nth-of-type(2) {
+    margin: 16px 0;
+}
+
+label,
+input,
+textarea {
+    padding: 8px;
+}
+
+label,
+[placeholder] {
+    color: #555;
+}
+
+label i {
+    margin-top: 5rem;
+}
+
+.field:focus-within label {
+    color: #000;
+    letter-spacing: 2px;
+
+}
+
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 6px -6px #555;
+}
+
+input:focus,
+textarea:focus {
+    /*    background: white; */
+    box-shadow: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+button {
+    background: #9453a6;
+    margin: 30px;
+    padding: 8px 16px;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 8px 6px -6px #555;
+}
+
+button:hover {
+    letter-spacing: 2px;
+    box-shadow: none;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+:not(.social-media) {
+    font-size: 1rem;
+}
+
+.social-media span {
+    font-size: 1.2rem;
+}
+
+.social-media span .fas {
+    margin: 2rem;
+}
+
+.social-media a {
+    color: #000;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 1.2rem;
+}
+
+@media (max-width: 425px) {
+    form {
+        width: 100%;
+    }
+}
+
+.numbs {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.numbs a {
+    color: #9453a6;
+    font-family: 'Henny Penny';
+    font-size: 1.2rem;
+}
